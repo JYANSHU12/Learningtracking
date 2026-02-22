@@ -51,7 +51,6 @@ app.use('/api/admin', adminRoutes);
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to Learning Progress Tracker API' });
 });
-
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
